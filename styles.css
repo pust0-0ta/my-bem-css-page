@@ -1,11 +1,11 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 .header {
   background-color: #9ff8f5;
-  color: #ffaed5;
+  color: #090909;
   border-top-right-radius: 90px;
   border-bottom-left-radius: 80px;
   padding: 20px;
@@ -28,21 +28,46 @@ body {
 .header__link:hover {
   color: #ffaed5;
 }
+.audio__section {
+  display: flex;
+  justify-content: center;
+}
 
 .audio__border {
   border: 10px solid #ffaed5;
-  border-radius: 50px; 
+  border-radius: 50px;
 }
 
-.content {
-  padding: 20px;
+.content__title {
+  display: flex;
+  justify-content: center;
+}
+
+.content__text {
+  border: 2px solid #ffaed5; /* Обводим  линией */
+  border-radius: 50px; /* Скругляем углы на 5 пикселей */
+  padding: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300рх 250px 300рх;
+  grid-template-rows: 300рх;
   text-align: center;
 }
+
+.gallery-container__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .footer {
   background-color: #9ff8f5;
-  color: #ffaed5;
+  color: #010101;
   border-top-right-radius: 80px;
   border-bottom-left-radius: 90px;
   text-align: center;
-  padding: 15px;
+  padding: 5px;
 }
